@@ -14,21 +14,21 @@ pipeline{
 
     stage('Compile Java Program'){
       steps{
-        echo "Compiling Java Program'
+        echo "Compiling Java Program"
         sh 'javac HelloWorld.java'
       }
     }
 
     stage('Executing Java Program'){
       steps{
-        echo "Executing Java Program'
+        echo "Executing Java Program"
         sh 'java HelloWorld'
       }
     }
 
     stage('Executing Python Program'){
       steps{
-        echo "Executing Python Program'
+        echo "Executing Python Program"
         sh 'python3 HelloPython.py'
       }
     }
