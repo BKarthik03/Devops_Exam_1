@@ -5,6 +5,10 @@ pipeline{
     jdk 'jdk21'
   }
 
+  triggers {
+    cron('H/5 * * * *')
+  }
+
   stages{
     stage('checkout'){
       steps{
